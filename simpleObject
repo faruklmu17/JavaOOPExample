@@ -1,0 +1,32 @@
+public class object {
+
+		//instant variables
+		String breed;
+		String size;
+		int age;
+		String color;
+		
+		//instant method
+		public String getInfo() {
+			return ("My dog's breed is: "+ breed +"\n"+ "My dog's age is: "+ age);
+		}
+		
+          public static void main(String[] args) {
+         		object myDog = new object();
+         		object my2ndDog = new object();
+         		myDog.breed = "Husky";
+         		myDog.age = 5;
+         		my2ndDog.breed = "Poodle";
+         		my2ndDog.age = 8;
+         		prln(myDog.getInfo());
+         		prln(my2ndDog.getInfo());
+
+		
+
+	}
+
+	public static void prln(Object myObject) {
+		System.out.println(myObject);
+	}
+	
+}
